@@ -31,7 +31,7 @@ But we will never eliminate necessary prescision- so there will always be code.
 - In messy code, every change we make to the code breaks two or three other parts of the code.
 
 
-## The Grand Redesign in the Sky
+### The Grand Redesign in the Sky
 
 - Eventually the team rebels. They inform management that they cannot continue to develop in this odious code base. They demand a redesign.
 - But redesigning the code and maintaining the old code, and sufficing the new requirements at the same time takes a lot of time.
@@ -39,7 +39,7 @@ During this long timespan, new codebase could also become messy. Then old team m
 - So keeping code clean is not just cost effective; it's matter of professional survival.
 
 
-## Attitude
+### Attitude
 
 We can say that following reasons are there to turn good code into bad code:
 
@@ -58,9 +58,11 @@ Conclusion:
 - So too it is unprofessional for programmers to bend to the will of managers who don't understand the risks of making messes.
 
 
-## The Primal Conundrum
+### The Primal Conundrum
 
 - The only waty to make the deadline - the only way to go fast - is to keep the code as clean as possible at all times.
 
-## The Art of Clean Code
+### The Art of Clean Code
+
+- The
 
