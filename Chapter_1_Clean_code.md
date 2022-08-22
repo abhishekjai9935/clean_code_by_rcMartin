@@ -64,5 +64,22 @@ Conclusion:
 
 ### The Art of Clean Code
 
-- The
+- If we want to write clean code then first we need to know what is Clean code
+- Being able to recognize clean code from dirty code does not mean that we knwo how to write clean code.
+- Writing clean code requires the disciplined use of a  myriad little techniques applied through a panstakngly acquired sense of "cleanliness". This "code-sense" is the key.
+- In short, a programmer who writes clean code is an artist who can take a blank screen through a series of transformations until it is an elegantly coded system.
 
+
+### What is clean code?
+
+- Author asked this question to deeply experienced programmers what they thought:
+
+  - Bjarne Stroustrup: "I like my code to be elegant and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and per- formance close to optimal so as not to tempt people to make the code messy with unprinci- pled optimizations. Clean code does one thing well."
+
+  - Grady Booch: "Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control."
+
+  - Dave Thomas: "Clean code can be read, and enhanced by a developer other than its original author. It has unit and acceptance tests. It has meaningful names. It provides one way rather than many ways for doing one thing. It has minimal depen- dencies, which are explicitly defined, and pro- vides a clear and minimal API. Code should be literate since depending on the language, not all necessary information can be expressed clearly in code alone."
+
+  - Michael Feathers: "I could list all of the qualities that I notice in clean code, but there is one overarching quality that leads to all of them. Clean code always looks like it was written by someone who cares. There is nothing obvious that you can do to make it better. All of those things were thought about by the code’s author, and if you try to imagine improvements, you’re led back to where you are, sitting in appreciation of the code someone left for you—code left by some- one who cares deeply about the craft."
+
+### Schools of Thought
