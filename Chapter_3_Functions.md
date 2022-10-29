@@ -177,6 +177,55 @@ if (attributeExists("username")) {
 }
 ```
 
+## Prefer Exceptions to Returning Error Codes
+
+- Returning error codes from command functions is a subtle violation of command query separation. It promotes commands being used as expressions in the predicates of ``` if ``` statements.
+
+- On the other hand, if you use exceptions instead of returned error codes, then the error processing code can be separated from the happy path code and can be simplified:
+
+``` 
+try {
+  deletePage(page); 
+  registry.deleteReference(page.name); 
+  configKeys.deleteKey(page.name.makeKey());
+}
+catch (Exception e) {
+  logger.log(e.getMessage()); 
+}
+```
+## Extract Try/Catch blocks
+
+```Try/catch``` blocks are ugly in their own right. They confuse the structure of the code and mix error processing with normal processing. So it is better to extract the bodies of the ```try``` and ```catch``` blocks out into functions of their own.
+
+```
+public void delete(Page page) {
+  try {
+    deletePageAndAllReferences(page); 
+  }
+  catch (Exception e) { 
+    logError(e);
+  } 
+}
+
+private void deletePageAndAllReferences(Page page) throws Exception { 
+   deletePage(page);
+   registry.deleteReference(page.name);
+   configKeys.deleteKey(page.name.makeKey());
+}
+
+private void logError(Exception e) { 
+    logger.log(e.getMessage());
+}
+```
+## Error Handling is One thing
+
+- Functions should do one thing, Error hadling is one thing. Thus a functions that handles errors should do nothing else. This implies (as in the example above) that if the keyword ```try``` exists in a function, it should be very first word in the function and that there should be nothing after the ```catch/finally``` blocks.
+
+
+
+
+
+
 
 
 
