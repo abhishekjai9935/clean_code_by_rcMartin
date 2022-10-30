@@ -221,6 +221,24 @@ private void logError(Exception e) {
 
 - Functions should do one thing, Error hadling is one thing. Thus a functions that handles errors should do nothing else. This implies (as in the example above) that if the keyword ```try``` exists in a function, it should be very first word in the function and that there should be nothing after the ```catch/finally``` blocks.
 
+## Don't Repeat Yourself
+
+- Duplication may be the root of all evil in software. Many principles and practices have been created for the purpose of controlling or eliminating it.
+
+
+## How do you write functions like this?
+
+- Writing software is like any other kind of writing. When you write a paper or an article, you get your thoughts down first, then you mssage it until it reds well. The first draft might be clumsy and disorganized, so you wordsmith it and restructure it and refine it until it reads the way you want it to read.
+
+
+## Conclusion
+
+- Master programmers think of systems as stories to be told rather than programs to be written.
+
+- After following rules, the functions will be short, well named and nicely organized. But never forget that your real goal is to tell the story of the system. 
+
+
+
 
 
 
